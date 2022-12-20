@@ -31,7 +31,7 @@
                                                 <div class="my-3" :class="item.done ? 'checked' : '' " @click="check(index)">
                                                     {{ index + 1 }} - {{ item.text }}
                                                 </div>
-                                                <button class="btn btn-danger btn-square"><i class="fa-solid fa-xmark"></i></button>
+                                                <button class="btn btn-danger btn-square" @click="deleteItem(index)"><i class="fa-solid fa-xmark"></i></button>
                                             </li>
                                         </ul>
                                     </div>

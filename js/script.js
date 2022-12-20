@@ -45,15 +45,9 @@ createApp({
             else {
                 singleItem.done = false
             }
+        },
+        deleteItem(index){
+            this.toDoList.splice(index, 1)
         }
-        // delete(index){
-        //     let singleItem = this.toDoList(index)
-        //     if (singleItem.done == false){
-        //         singleItem = true
-        //     }
-        //     else {
-        //         singleItem = false
-        //     }
-        // }
     }
 }).mount("#app")
