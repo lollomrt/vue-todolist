@@ -11,3 +11,8 @@
 li {
     cursor: pointer;
 }
+
+.height-card {
+    max-height: 55vh;
+    overflow-y: scroll;
+}

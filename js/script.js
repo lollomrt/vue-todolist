@@ -4,6 +4,7 @@ createApp({
     data(){
         return{
             listItem: 0,
+            newItem: "",
             toDoList: [
                 {
                     text: "Uova",
@@ -48,6 +49,14 @@ createApp({
         },
         deleteItem(index){
             this.toDoList.splice(index, 1)
+        },
+        createNewItem(){
+                let object = {
+                text: this.newItem,
+                done: false
+            }
+            this.toDoList.push(object)
+            this.newItem = ""
         }
     }
 }).mount("#app")
