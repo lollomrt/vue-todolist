@@ -37,8 +37,23 @@ createApp({
         }
     },
     methods:{
-        // displayList(index){
-        //     this.listItem(index)
+        check(index){
+            let singleItem = this.toDoList[index]
+            if (singleItem.done == false){
+                singleItem.done = true
+            }
+            else {
+                singleItem.done = false
+            }
+        }
+        // delete(index){
+        //     let singleItem = this.toDoList(index)
+        //     if (singleItem.done == false){
+        //         singleItem = true
+        //     }
+        //     else {
+        //         singleItem = false
+        //     }
         // }
     }
 }).mount("#app")
